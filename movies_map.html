@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b0228eb8db3400cbe67cb60a6d3030d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6b0228eb8db3400cbe67cb60a6d3030d" ></div>
+        
+</body>
+<script>    
+    
+            var map_6b0228eb8db3400cbe67cb60a6d3030d = L.map(
+                "map_6b0228eb8db3400cbe67cb60a6d3030d",
+                {
+                    center: [49.0, 24.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9a8f5c170a14f5d844e08092558054d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6b0228eb8db3400cbe67cb60a6d3030d);
+        
+    
+            var feature_group_03d3ee8e2e1f4ec4ba44cc2732eed37e = L.featureGroup(
+                {}
+            ).addTo(map_6b0228eb8db3400cbe67cb60a6d3030d);
+        
+    
+            var marker_f83d2f90ca6a43f2b693905d106a6b58 = L.marker(
+                [49.0, 24.0],
+                {}
+            ).addTo(feature_group_03d3ee8e2e1f4ec4ba44cc2732eed37e);
+        
+    
+        var popup_de3c0b55dde84c7e9ebe0a1decc471cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1174740fdcc47d29c42a86e69bbb4ac = $(`<div id="html_f1174740fdcc47d29c42a86e69bbb4ac" style="width: 100.0%; height: 100.0%;">my_point</div>`)[0];
+            popup_de3c0b55dde84c7e9ebe0a1decc471cc.setContent(html_f1174740fdcc47d29c42a86e69bbb4ac);
+        
+
+        marker_f83d2f90ca6a43f2b693905d106a6b58.bindPopup(popup_de3c0b55dde84c7e9ebe0a1decc471cc)
+        ;
+
+        
+    
+    
+            marker_f83d2f90ca6a43f2b693905d106a6b58.bindTooltip(
+                `<div>
+                     me
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_1ab598b57e8c4b6e9b436758bc4bae53 = L.featureGroup(
+                {}
+            ).addTo(map_6b0228eb8db3400cbe67cb60a6d3030d);
+        
+    
+            var marker_12e5f302f3f6421cb60964ae21b0489f = L.marker(
+                [49.8038191, 30.1116924],
+                {}
+            ).addTo(feature_group_1ab598b57e8c4b6e9b436758bc4bae53);
+        
+    
+        var popup_ffd1c50a97b8414f99fc7a590619e3e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8c7733971624e329748598282832591 = $(`<div id="html_e8c7733971624e329748598282832591" style="width: 100.0%; height: 100.0%;">Devyat zhizney Nestora Makhno </div>`)[0];
+            popup_ffd1c50a97b8414f99fc7a590619e3e6.setContent(html_e8c7733971624e329748598282832591);
+        
+
+        marker_12e5f302f3f6421cb60964ae21b0489f.bindPopup(popup_ffd1c50a97b8414f99fc7a590619e3e6)
+        ;
+
+        
+    
+    
+            marker_12e5f302f3f6421cb60964ae21b0489f.bindTooltip(
+                `<div>
+                     Kiev Ukraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aac259a631d34e55817ccf6208ddf5d5 = L.marker(
+                [50.4500336, 30.5241361],
+                {}
+            ).addTo(feature_group_1ab598b57e8c4b6e9b436758bc4bae53);
+        
+    
+        var popup_d9f5ace9706f41d48fe1fbf8855543bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38453ea15759401da67cceea3d00ae46 = $(`<div id="html_38453ea15759401da67cceea3d00ae46" style="width: 100.0%; height: 100.0%;">Letopis vremyon </div>`)[0];
+            popup_d9f5ace9706f41d48fe1fbf8855543bc.setContent(html_38453ea15759401da67cceea3d00ae46);
+        
+
+        marker_aac259a631d34e55817ccf6208ddf5d5.bindPopup(popup_d9f5ace9706f41d48fe1fbf8855543bc)
+        ;
+
+        
+    
+    
+            marker_aac259a631d34e55817ccf6208ddf5d5.bindTooltip(
+                `<div>
+                     Bila Tserkva Ukraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7709f31f8d44c46bf7268fb56e78400 = L.marker(
+                [51.2705477, 30.2195609],
+                {}
+            ).addTo(feature_group_1ab598b57e8c4b6e9b436758bc4bae53);
+        
+    
+        var popup_2a7557643f524259ac83e30f41e91262 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a07b1ab1d97d4904b3aa01a91837e699 = $(`<div id="html_a07b1ab1d97d4904b3aa01a91837e699" style="width: 100.0%; height: 100.0%;">Destination Truth </div>`)[0];
+            popup_2a7557643f524259ac83e30f41e91262.setContent(html_a07b1ab1d97d4904b3aa01a91837e699);
+        
+
+        marker_a7709f31f8d44c46bf7268fb56e78400.bindPopup(popup_2a7557643f524259ac83e30f41e91262)
+        ;
+
+        
+    
+    
+            marker_a7709f31f8d44c46bf7268fb56e78400.bindTooltip(
+                `<div>
+                     Chernobyl Ukraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_564d4dab9ca74d6fa64b0cdbd056c71f = L.marker(
+                [46.4873195, 30.7392776],
+                {}
+            ).addTo(feature_group_1ab598b57e8c4b6e9b436758bc4bae53);
+        
+    
+        var popup_8868392a9bdf4410a5b19ef015ce611f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b677ffdde27b4b2e900183701b521cb5 = $(`<div id="html_b677ffdde27b4b2e900183701b521cb5" style="width: 100.0%; height: 100.0%;">Menschen am Wasser </div>`)[0];
+            popup_8868392a9bdf4410a5b19ef015ce611f.setContent(html_b677ffdde27b4b2e900183701b521cb5);
+        
+
+        marker_564d4dab9ca74d6fa64b0cdbd056c71f.bindPopup(popup_8868392a9bdf4410a5b19ef015ce611f)
+        ;
+
+        
+    
+    
+            marker_564d4dab9ca74d6fa64b0cdbd056c71f.bindTooltip(
+                `<div>
+                     Yalta Crimea Ukraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebecbde0aa08479691b8eb715c16ca11 = L.marker(
+                [44.4970713, 34.1586871],
+                {}
+            ).addTo(feature_group_1ab598b57e8c4b6e9b436758bc4bae53);
+        
+    
+        var popup_b7cd1c04ab224898a614ce5b7d6cd3dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98324212d573433ba688decd04aadbbf = $(`<div id="html_98324212d573433ba688decd04aadbbf" style="width: 100.0%; height: 100.0%;">Diversant 2: Konets voyny </div>`)[0];
+            popup_b7cd1c04ab224898a614ce5b7d6cd3dd.setContent(html_98324212d573433ba688decd04aadbbf);
+        
+
+        marker_ebecbde0aa08479691b8eb715c16ca11.bindPopup(popup_b7cd1c04ab224898a614ce5b7d6cd3dd)
+        ;
+
+        
+    
+    
+            marker_ebecbde0aa08479691b8eb715c16ca11.bindTooltip(
+                `<div>
+                     Odessa Ukraine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_9d89a48dd3e14c37a21c193d26e50421 = L.featureGroup(
+                {}
+            ).addTo(map_6b0228eb8db3400cbe67cb60a6d3030d);
+        
+    
+            var circle_marker_fbeff4a0b2aa4fd1834dde31bc447364 = L.circleMarker(
+                [29.979167, 31.134167],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d89a48dd3e14c37a21c193d26e50421);
+        
+    
+        var popup_29b7bfdeea1943118eedb30b06086cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c8dcd01cdeb4671b449d4a28497f831 = $(`<div id="html_4c8dcd01cdeb4671b449d4a28497f831" style="width: 100.0%; height: 100.0%;">Great Pyramid of Giza</div>`)[0];
+            popup_29b7bfdeea1943118eedb30b06086cf9.setContent(html_4c8dcd01cdeb4671b449d4a28497f831);
+        
+
+        circle_marker_fbeff4a0b2aa4fd1834dde31bc447364.bindPopup(popup_29b7bfdeea1943118eedb30b06086cf9)
+        ;
+
+        
+    
+    
+            circle_marker_fbeff4a0b2aa4fd1834dde31bc447364.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_48276528a78447b29e404c3671c99305 = L.circleMarker(
+                [32.5355, 44.4275],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d89a48dd3e14c37a21c193d26e50421);
+        
+    
+        var popup_c990d9689b5348088a9230d5cd7962c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d81ddb21e3b4361b98c5b480101913a = $(`<div id="html_9d81ddb21e3b4361b98c5b480101913a" style="width: 100.0%; height: 100.0%;">Hanging gardens of Babylon</div>`)[0];
+            popup_c990d9689b5348088a9230d5cd7962c6.setContent(html_9d81ddb21e3b4361b98c5b480101913a);
+        
+
+        circle_marker_48276528a78447b29e404c3671c99305.bindPopup(popup_c990d9689b5348088a9230d5cd7962c6)
+        ;
+
+        
+    
+    
+            circle_marker_48276528a78447b29e404c3671c99305.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cc7834476308457c8bc2c6b4e9b656f2 = L.circleMarker(
+                [37.637861, 21.63],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d89a48dd3e14c37a21c193d26e50421);
+        
+    
+        var popup_2e056eccdd3343fabc4b7768a500ff3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5039b7aaded048a3997a14f1dbcf2df6 = $(`<div id="html_5039b7aaded048a3997a14f1dbcf2df6" style="width: 100.0%; height: 100.0%;">Statue of Zeus at Olympia</div>`)[0];
+            popup_2e056eccdd3343fabc4b7768a500ff3f.setContent(html_5039b7aaded048a3997a14f1dbcf2df6);
+        
+
+        circle_marker_cc7834476308457c8bc2c6b4e9b656f2.bindPopup(popup_2e056eccdd3343fabc4b7768a500ff3f)
+        ;
+
+        
+    
+    
+            circle_marker_cc7834476308457c8bc2c6b4e9b656f2.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_854b2cd2d6bb42fdab9660f3026e2b6b = L.circleMarker(
+                [37.949722, 27.363889],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d89a48dd3e14c37a21c193d26e50421);
+        
+    
+        var popup_2fd07c2a7342453eadbd20914ff4829e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3dfe5a6421584b108169ead79eabf0ee = $(`<div id="html_3dfe5a6421584b108169ead79eabf0ee" style="width: 100.0%; height: 100.0%;">Temple of Artemis at Ephesus</div>`)[0];
+            popup_2fd07c2a7342453eadbd20914ff4829e.setContent(html_3dfe5a6421584b108169ead79eabf0ee);
+        
+
+        circle_marker_854b2cd2d6bb42fdab9660f3026e2b6b.bindPopup(popup_2fd07c2a7342453eadbd20914ff4829e)
+        ;
+
+        
+    
+    
+            circle_marker_854b2cd2d6bb42fdab9660f3026e2b6b.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c910c0dd1db34476814a9308741fdb63 = L.circleMarker(
+                [37.037942, 27.424097],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d89a48dd3e14c37a21c193d26e50421);
+        
+    
+        var popup_b8e7e9f0da5f4fa3bd71a261d6e18cc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09d2d941d6aa4dffb095e4c8e4508a18 = $(`<div id="html_09d2d941d6aa4dffb095e4c8e4508a18" style="width: 100.0%; height: 100.0%;">Mausoleum at Halicarnassus</div>`)[0];
+            popup_b8e7e9f0da5f4fa3bd71a261d6e18cc3.setContent(html_09d2d941d6aa4dffb095e4c8e4508a18);
+        
+
+        circle_marker_c910c0dd1db34476814a9308741fdb63.bindPopup(popup_b8e7e9f0da5f4fa3bd71a261d6e18cc3)
+        ;
+
+        
+    
+    
+            circle_marker_c910c0dd1db34476814a9308741fdb63.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7c411a5b14e24e3cb702e58e9e6387d5 = L.circleMarker(
+                [36.451111, 28.227778],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d89a48dd3e14c37a21c193d26e50421);
+        
+    
+        var popup_3879d119152947349d65c7e8d383b7a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2881946e61244988be64eb1b063af85 = $(`<div id="html_d2881946e61244988be64eb1b063af85" style="width: 100.0%; height: 100.0%;">Colossus of Rhodes</div>`)[0];
+            popup_3879d119152947349d65c7e8d383b7a4.setContent(html_d2881946e61244988be64eb1b063af85);
+        
+
+        circle_marker_7c411a5b14e24e3cb702e58e9e6387d5.bindPopup(popup_3879d119152947349d65c7e8d383b7a4)
+        ;
+
+        
+    
+    
+            circle_marker_7c411a5b14e24e3cb702e58e9e6387d5.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d08a97a00df43c7ab0a0d3862f31f8f = L.circleMarker(
+                [31.214167, 29.885],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9d89a48dd3e14c37a21c193d26e50421);
+        
+    
+        var popup_f3e42a9670854dfbbb572269301ca8ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8f9f895f0334612a2c7ca6fc50ca61a = $(`<div id="html_f8f9f895f0334612a2c7ca6fc50ca61a" style="width: 100.0%; height: 100.0%;">Lighthouse of Alexandria</div>`)[0];
+            popup_f3e42a9670854dfbbb572269301ca8ce.setContent(html_f8f9f895f0334612a2c7ca6fc50ca61a);
+        
+
+        circle_marker_3d08a97a00df43c7ab0a0d3862f31f8f.bindPopup(popup_f3e42a9670854dfbbb572269301ca8ce)
+        ;
+
+        
+    
+    
+            circle_marker_3d08a97a00df43c7ab0a0d3862f31f8f.bindTooltip(
+                `<div>
+                     1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_c663de3101864f5b97e4dee6e6ebed85 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f9a8f5c170a14f5d844e08092558054d,
+                },
+                overlays :  {
+                    "Point" : feature_group_03d3ee8e2e1f4ec4ba44cc2732eed37e,
+                    "Films filmed nearby" : feature_group_1ab598b57e8c4b6e9b436758bc4bae53,
+                    "Seven wonders of the Ancient world" : feature_group_9d89a48dd3e14c37a21c193d26e50421,
+                },
+            };
+            L.control.layers(
+                layer_control_c663de3101864f5b97e4dee6e6ebed85.base_layers,
+                layer_control_c663de3101864f5b97e4dee6e6ebed85.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6b0228eb8db3400cbe67cb60a6d3030d);
+        
+</script>
